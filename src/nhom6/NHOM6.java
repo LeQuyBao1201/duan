@@ -9,7 +9,7 @@ package nhom6;
  * @author adminh
  */
 public class NHOM6 {
-   hello.
+ System.err.println("hellooo");
     /**
      * @param args the command line arguments
      */
