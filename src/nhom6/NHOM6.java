@@ -13,8 +13,14 @@ public class NHOM6 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here       
+    public static void inSoLe(int n) {
+        System.out.print("Các số lẻ từ 0 đến " + n + " là: ");
+        for (int i = 0; i <= n; i++) {
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
     }
     
 }
