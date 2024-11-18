@@ -57,6 +57,8 @@ public class NHOM6 {
 
         scanner.close();
     }
+    //phwp cong
+    
      public static int cong(int a, int b) {
         return a + b;
      }
