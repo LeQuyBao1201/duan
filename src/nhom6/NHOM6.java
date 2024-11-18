@@ -14,7 +14,8 @@ public class NHOM6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        aloo
+        System.out.println("Nhom java 6"
+        );
     }
     
 }
