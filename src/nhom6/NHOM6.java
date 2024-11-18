@@ -4,6 +4,8 @@
  */
 package nhom6;
 
+import java.util.Scanner;
+
 /**
  *
  * @author adminh
@@ -54,5 +56,37 @@ public class NHOM6 {
         }
 
         scanner.close();
+    }
+     public static int cong(int a, int b) {
+        return a + b;
+    }
+
+    // Hàm trừ
+    public static int tru(int a, int b) {
+        return a - b;
+    }
+
+    // Hàm nhân
+    public static int nhan(int a, int b) {
+        return a * b;
+    }
+
+    // Hàm chia
+    public static String chia(int a, int b) {
+        if (b == 0) {
+            return "Không thể chia cho 0!";
+        }
+        return String.valueOf((double) a / b);
+    }
+
+    // Hàm in các số lẻ
+    public static void inSoLe(int n) {
+        System.out.print("Các số lẻ từ 0 đến " + n + " là: ");
+        for (int i = 0; i <= n; i++) {
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
     }
 }
