@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package nhom6;
-      a123
 /**kfsafmd na
  *
  * @author adminhádnlaknl
@@ -21,6 +20,14 @@ public class NHOM6 {
             }
         }
         System.out.println();
+        public static int cong(int a, int b) {
+        return a + b;
+    }
+
+    // Hàm trừ
+    public static int tru(int a, int b) {
+        return a - b;
+    }
     }
     
 }
