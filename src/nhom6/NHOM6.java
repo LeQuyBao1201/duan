@@ -4,9 +4,6 @@
  */
 package nhom6;
 
-import java.util.Scanner;
-
-
 /**
  *
  * @author adminhádnlaknl
@@ -18,7 +15,10 @@ public class NHOM6 {
 
 
 
-    public static void main(String[] args) {
+    
+
+        
+
      Scanner scanner = new Scanner(System.in);
         System.out.println("Chọn chức năng:");
         System.out.println("1. Cộng");
@@ -26,7 +26,7 @@ public class NHOM6 {
         System.out.println("3. Nhân");
         System.out.println("4. Chia");
         System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
-
+ystem.out.print("asd");
         System.out.print("Nhập lựa chọn của bạn (1-5): ");
         int choice = scanner.nextInt();
 
@@ -59,6 +59,7 @@ public class NHOM6 {
         }
 
         scanner.close();
+
 
     }
     //phwp cong
