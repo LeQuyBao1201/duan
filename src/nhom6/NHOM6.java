@@ -5,6 +5,8 @@
 package nhom6;
 
 import java.util.Scanner;
+
+
 /**
  *
  * @author adminhádnlaknl
@@ -13,18 +15,11 @@ public class NHOM6 {
     /**
      * @param args the command line arguments
      */
-   
+
+
 
     public static void main(String[] args) {
-
-        // TODO code application logic here
-       // Fisrt cmt
-        //siuu
-
-         System.err.println("siuuu");
-
-        Scanner scanner = new Scanner(System.in);
-
+     Scanner scanner = new Scanner(System.in);
         System.out.println("Chọn chức năng:");
         System.out.println("1. Cộng");
         System.out.println("2. Trừ");
@@ -71,17 +66,16 @@ public class NHOM6 {
      public static int cong(int a, int b) {
         return a + b;
      }
-
-   
+   // phep tru
     public static int tru(int a, int b) {
         return a - b;
     }
-
+    // phep nhan
     public static int nhan(int a, int b) {
         return a * b;
     }
 
-
+    // phep chia
     public static String chia(int a, int b) {
         if (b == 0) {
             return "Không thể chia cho 0!";
