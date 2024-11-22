@@ -6,17 +6,19 @@ package nhom6;
 
 import java.util.Scanner;
 
+
 /**
  *
- * @author adminh
+ * @author adminhádnlaknl
  */
 public class NHOM6 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
+
+    public static void main(String[] args) {
+     Scanner scanner = new Scanner(System.in);
         System.out.println("Chọn chức năng:");
         System.out.println("1. Cộng");
         System.out.println("2. Trừ");
@@ -56,13 +58,13 @@ public class NHOM6 {
         }
 
         scanner.close();
+
     }
     //phwp cong
     
      public static int cong(int a, int b) {
         return a + b;
      }
-
    // phep tru
     public static int tru(int a, int b) {
         return a - b;
