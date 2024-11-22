@@ -69,12 +69,12 @@ public class NHOM6 {
     public static int tru(int a, int b) {
         return a - b;
     }
-
+    // phep nhan
     public static int nhan(int a, int b) {
         return a * b;
     }
 
-
+    // phep chia
     public static String chia(int a, int b) {
         if (b == 0) {
             return "Không thể chia cho 0!";
