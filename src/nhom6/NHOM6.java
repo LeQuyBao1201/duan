@@ -23,6 +23,13 @@ public class NHOM6 {
         System.out.println();
 
     public static void main(String[] args) {
+
+        // TODO code application logic here
+       // Fisrt cmt
+        //siuu
+
+         System.err.println("siuuu");
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Chọn chức năng:");
@@ -64,6 +71,7 @@ public class NHOM6 {
         }
 
         scanner.close();
+
     }
     //phwp cong
     
