@@ -18,10 +18,10 @@ public class NHOM6 {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {               
      Scanner scanner = new Scanner(System.in);
         System.out.println("Chon chuc nang:");
-        System.out.println("1. Cộng");
+        System.out.println("1. Cong");
         System.out.println("2. Trừ");
         System.out.println("3. Nhân");
         System.out.println("4. Chia");
