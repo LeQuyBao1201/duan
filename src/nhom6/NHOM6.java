@@ -29,5 +29,6 @@ public class NHOM6 {
         return a - b;
     }
     }
-    
+    System.out.println("vdsavd");
+    System.out.println("fdsafd");
 }
