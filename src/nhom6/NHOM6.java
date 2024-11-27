@@ -23,6 +23,7 @@ public static void main(String[] args) {
         System.out.println("4. Chia");
         System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
         System.out.print("asd");
+        System.out.println("6. nhap vao so nguyen va in ra cac so chan");
         System.out.print("Nhập lựa chọn của bạn (1-5): ");
         int choice = scanner.nextInt();
 
