@@ -15,22 +15,23 @@ public class NHOM6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.print("asd");
-        System.out.print("asd");
-        System.out.print("asd");
+      
+        public static int nhan(int a, int b) {
+        return a * b;
+    }
 
-        System.out.print("asd");
+    // Hàm chia
+    public static String chia(int a, int b) {
+        if (b == 0) {
+            return "Không thể chia cho 0!";
+        }
+        return String.valueOf((double) a / b);   
+    }
+    private integer id;
+    private String ma_danh_muc;
+    private String trang_thai;
+    private date ngay_tao;
 
-        System.out.print("asd");
-        System.out.print("asd");
-        System.out.print("asd");
-
-        System.out.print("asd");
-        System.out.print("asd");
-        System.out.print("asd");
-
-        System.out.print("asd");
-        
     }
     
 }
