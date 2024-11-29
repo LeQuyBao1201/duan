@@ -67,6 +67,7 @@ public static void main(String[] args) {
                         Scanner.out.println("Nhập tên cần xóa");
                         System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
                         break;
+                    
                     case 7:
                         System.exit(0);
                         default:
