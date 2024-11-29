@@ -72,6 +72,11 @@ ystem.out.print("asd");
                         for (int i = 1; i <= n; i += 2) System.out.print(i + " ");
                     System.out.println();
                     break;
+                    case 6:
+                        scanner.nextInt();
+                        Scanner.out.println("Nhập tên cần xóa");
+                        System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
+                        break;
                     case 7:
                         System.exit(0);
                         default:
