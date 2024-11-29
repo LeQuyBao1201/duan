@@ -18,22 +18,24 @@ public class NHOM6 {
 
 
 
-    public static void main(String[] args) {               
+    public static void main(String[] args) {
      Scanner scanner = new Scanner(System.in);
-        System.out.println("Chon chuc nang:");
-        System.out.println("1. Cong");
+        System.out.println("Chọn chức năng:");
+        System.out.println("1. Cộng");
         System.out.println("2. Trừ");
         System.out.println("3. Nhân");
         System.out.println("4. Chia");
         System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
+        System.out.println("10. Nhập vào số chan và in ra các số chan");
+        System.out.println("11. Nhập vào số le và in ra các số lẻ");
 
         System.out.print("Nhập lựa chọn của bạn (1-5): ");
         int choice = scanner.nextInt();
 
         if (choice >= 1 && choice <= 4) {
-            System.out.print("Nhap so thu nhat: ");
+            System.out.print("Nhập số thứ nhất: ");
             int a = scanner.nextInt();
-            System.out.print("Nhap so thu hai: ");
+            System.out.print("Nhập số thứ hai: ");
             int b = scanner.nextInt();
 
             switch (choice) {
