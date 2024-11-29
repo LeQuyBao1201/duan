@@ -30,7 +30,7 @@ public static void main(String[] args) {
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
         int choice = scanner.nextInt();
 
-       
+        if (choice >= 1 && choice <= 4) {
             System.out.print("Nhap so thu nhat: ");
             int a = scanner.nextInt();
             System.out.print("Nhap so thu hai: ");
