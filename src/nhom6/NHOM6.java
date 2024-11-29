@@ -59,7 +59,7 @@ public static void main(String[] args) {
                     break;
                     case 6:
                         scanner.nextInt();
-                        Scanner.out.println("Nhập tên cần xóa");
+                        System.out.println("Nhập tên cần xóa");
                         System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
                         break;
                     
