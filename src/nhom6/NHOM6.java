@@ -16,26 +16,7 @@ public class NHOM6 {
      * @param args the command line arguments
      */
 
-    public static void main(String[] args) {
-        // TODO code application logic here
-      
-        public static int nhan(int a, int b) {
-        return a * b;
     }
-
-    // Hàm chia
-    public static String chia(int a, int b) {
-        if (b == 0) {
-            return "Không thể chia cho 0!";
-        }
-        return String.valueOf((double) a / b);   
-    }
-    
-
-    }
-=======
-import java.util.Scanner;
-=======
 
 public static void main(String[] args) {
      Scanner scanner = new Scanner(System.in);
