@@ -65,6 +65,7 @@ public static void main(String[] args) {
                         break;
                     
                     case 7:
+
                     System.out.print("Nhap vao mot so nguyen: ");
                     int g = scanner.nextInt();
                     
@@ -82,6 +83,8 @@ public static void main(String[] args) {
                     default:
                     System.out.println("chon sai chuc nang vui long chon lai");
                     
+
+                       
 
             }
         } else if (choice == 5) {
