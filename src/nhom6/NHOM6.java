@@ -49,6 +49,25 @@ public static void main(String[] args) {
                 case 4:
                     System.out.println("Kết quả: " + chia(a, b));
                     break;
+
+                    case 5:
+                        System.out.println("nhập một số nguyên" );
+                        int n = scanner.nextInt();
+                        System.out.println("Các số lẻ :");
+                        for (int i = 1; i <= n; i += 2) System.out.print(i + " ");
+                    System.out.println();
+                    break;
+                    case 6:
+                        scanner.nextInt();
+                        Scanner.out.println("Nhập tên cần xóa");
+                        System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
+                        break;
+                    
+                    case 7:
+                        System.exit(0);
+                        default:
+                            System.out.println("chon sai chuc nang vui long chon lai");
+
             }
         } else if (choice == 5) {
             System.out.print("Nhập một số nguyên: ");
