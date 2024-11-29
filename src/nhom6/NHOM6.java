@@ -66,6 +66,29 @@ public static void main(String[] args) {
                     
                     case 7:
                         System.exit(0);
+                        case 8:
+        System.out.println("Nhập một số nguyên để tính giai thừa:");
+        int num = scanner.nextInt();
+        long factorial = 1;
+        for (int i = 1; i <= num; i++) {
+            factorial *= i;
+        }
+        System.out.println("Giai thừa của " + num + " là: " + factorial);
+        break;
+    case 9:
+        System.out.println("Nhập một số nguyên để kiểm tra số nguyên tố:");
+        int primeCheck = scanner.nextInt();
+        boolean isPrime = true;
+        if (primeCheck <= 1) {
+            isPrime = false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(primeCheck); i++) {
+                if (primeCheck % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
                         default:
                             System.out.println("chon sai chuc nang vui long chon lai");
 
@@ -83,15 +106,17 @@ public static void main(String[] args) {
 
 
     }
-    //phwp cong
-    
-     public static int cong(int a, int b) {
+    // phwp cong
+
+    public static int cong(int a, int b) {
         return a + b;
-     }
-   // phep tru
+    }
+
+    // phep tru
     public static int tru(int a, int b) {
         return a - b;
     }
+
     // phep nhan
     public static int nhan(int a, int b) {
         return a * b;
@@ -104,7 +129,6 @@ public static void main(String[] args) {
         }
         return String.valueOf((double) a / b);
     }
-
 
     public static void inSoLe(int n) {
         System.out.print("Các số lẻ từ 0 đến " + n + " là: ");
