@@ -25,17 +25,12 @@ public static void main(String[] args) {
         System.out.println("3. Nhân");
         System.out.println("4. Chia");
         System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
-        System.out.println("6.xoa theo ten");
-        System.out.println("7.thoat");
-        System.out.println("8. nhap vao so nguyen va in ra cac so chan");
-        System.out.println("9. nhap vao so nguyen va in ra cac so chia het cho 5");
-        System.out.println("10. nhap vao so nguyen va in ra cac so chia het cho 10");
-        System.out.println("11. nhap vao so nguyen chia het cho 100");
-        System.out.print("Nhập lựa chọn của bạn (1-11): ");
-
+        System.out.println("6. nhap vao so nguyen va in ra cac so chan");
+        System.out.println("6. nhap vao so nguyen va in ra cac so chia het cho 5");
+        System.out.print("Nhập lựa chọn của bạn (1-20): ");
         int choice = scanner.nextInt();
 
-        if (choice >= 1 && choice <= 11) {
+       
             System.out.print("Nhap so thu nhat: ");
             int a = scanner.nextInt();
             System.out.print("Nhap so thu hai: ");
@@ -54,22 +49,6 @@ public static void main(String[] args) {
                 case 4:
                     System.out.println("Kết quả: " + chia(a, b));
                     break;
-                case 5:
-                        System.out.println("nhập một số nguyên" );
-                        int n = scanner.nextInt();
-                        System.out.println("Các số lẻ :");
-                        for (int i = 1; i <= n; i += 2) System.out.print(i + " ");
-                    System.out.println();
-                    break;
-                case 6:
-                        scanner.nextInt();
-                        Scanner.out.println("Nhập tên cần xóa");
-                        System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
-                        break;
-                case 7:
-                        System.exit(0);
-                        default:
-                            System.out.println("chon sai chuc nang vui long chon lai");
             }
         } else if (choice == 5) {
             System.out.print("Nhập một số nguyên: ");
