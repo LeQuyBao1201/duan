@@ -11,6 +11,7 @@ import java.util.Scanner;
  * @author adminhádnlaknl
  */
 public class NHOM6 {
+
     /**
      * @param args the command line arguments
      */
@@ -25,6 +26,7 @@ public static void main(String[] args) {
         System.out.println("6. nhap vao so nguyen va in ra cac so chan");
         System.out.println("7. nhap vao so nguyen va in ra cac so chia het cho 5");
         System.out.println("8. nhap vao so nguyen va in ra cac so chia het cho 10");
+   System.out.println("9. nhap vao so nguyen chia het cho 100");
         System.out.print("Nhập lựa chọn của bạn (1-5): ");
         int choice = scanner.nextInt();
 
@@ -57,6 +59,7 @@ public static void main(String[] args) {
         }
 
         scanner.close();
+
 
 
     }
