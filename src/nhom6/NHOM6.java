@@ -9,12 +9,10 @@ package nhom6;
  * @author adminh
  */
 public class NHOM6 {
- System.err.println("hellooo");
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public static void main(String[] args) {
+     Scanner scanner = new Scanner(System.in);
+        System.out.println("Chon chuc nang:");
+        System.out.println("9. nhap vao so nguyen chia het cho 100");
     }
     
 }
