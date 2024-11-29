@@ -4,15 +4,18 @@
  */
 package nhom6;
 
+import java.util.Scanner;
+
 /**
  *
  * @author adminhádnlaknl
  */
 public class NHOM6 {
+
     /**
      * @param args the command line arguments
      */
-<<<<<<< HEAD
+
     public static void main(String[] args) {
         // TODO code application logic here
       
@@ -32,24 +35,30 @@ public class NHOM6 {
     }
 =======
 import java.util.Scanner;
+=======
+
 public static void main(String[] args) {
      Scanner scanner = new Scanner(System.in);
-        System.out.println("Chọn chức năng:");
+        System.out.println("Chon chuc nang:");
         System.out.println("1. Cộng");
         System.out.println("2. Trừ");
         System.out.println("3. Nhân");
         System.out.println("4. Chia");
         System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
-ystem.out.print("asd");
         System.out.println("6.xoa theo ten");
         System.out.println("7.thoat");
-        System.out.print("Nhập lựa chọn của bạn (1-7): ");
+        System.out.println("8. nhap vao so nguyen va in ra cac so chan");
+        System.out.println("9. nhap vao so nguyen va in ra cac so chia het cho 5");
+        System.out.println("10. nhap vao so nguyen va in ra cac so chia het cho 10");
+        System.out.println("11. nhap vao so nguyen chia het cho 100");
+        System.out.print("Nhập lựa chọn của bạn (1-11): ");
+
         int choice = scanner.nextInt();
 
         if (choice >= 1 && choice <= 4) {
-            System.out.print("Nhập số thứ nhất: ");
+            System.out.print("Nhap so thu nhat: ");
             int a = scanner.nextInt();
-            System.out.print("Nhập số thứ hai: ");
+            System.out.print("Nhap so thu hai: ");
             int b = scanner.nextInt();
 
             switch (choice) {
@@ -91,6 +100,7 @@ ystem.out.print("asd");
         }
 
         scanner.close();
+
 
 
     }
