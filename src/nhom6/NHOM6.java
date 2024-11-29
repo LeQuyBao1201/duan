@@ -41,7 +41,9 @@ public static void main(String[] args) {
         System.out.println("4. Chia");
         System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
 ystem.out.print("asd");
-        System.out.print("Nhập lựa chọn của bạn (1-5): ");
+        System.out.println("6.xoa theo ten");
+        System.out.println("7.thoat");
+        System.out.print("Nhập lựa chọn của bạn (1-7): ");
         int choice = scanner.nextInt();
 
         if (choice >= 1 && choice <= 4) {
@@ -63,6 +65,8 @@ ystem.out.print("asd");
                 case 4:
                     System.out.println("Kết quả: " + chia(a, b));
                     break;
+                    case 7:
+                        System.exit(0);
             }
         } else if (choice == 5) {
             System.out.print("Nhập một số nguyên: ");
