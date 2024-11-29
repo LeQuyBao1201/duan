@@ -65,9 +65,26 @@ public static void main(String[] args) {
                         break;
                     
                     case 7:
-                        System.exit(0);
-                        default:
-                            System.out.println("chon sai chuc nang vui long chon lai");
+
+                    System.out.print("Nhap vao mot so nguyen: ");
+                    int g = scanner.nextInt();
+                    
+                    System.out.println("Cac so chia het cho 5 tu 1 den " + g + " la:");
+                    
+                    // In ra các số chia hết cho 5
+                    for (int i = 1; i <= g; i++) {
+                        if (i % 5 == 0) {
+                            System.out.print(i + " ");
+                        }
+                    }
+                    break;
+                    case 8:
+                    System.exit(0);
+                    default:
+                    System.out.println("chon sai chuc nang vui long chon lai");
+                    
+
+                       
 
             }
         } else if (choice == 5) {
