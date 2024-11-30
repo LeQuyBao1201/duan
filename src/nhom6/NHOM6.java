@@ -40,10 +40,10 @@ public static void main(String[] args) {
         System.out.println("3. Nhân");
         System.out.println("4. Chia");
         System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
-ystem.out.print("asd");
-        System.out.println("6.xoa theo ten");
-        System.out.println("7.thoat");
-        System.out.print("Nhập lựa chọn của bạn (1-7): ");
+        System.out.println("6.Xóa theo tên");
+        System.out.println("7.Tính trung bình tổng")
+        System.out.println("10.thoat");
+        System.out.print("Nhập lựa chọn của bạn (1-10): ");
         int choice = scanner.nextInt();
 
         if (choice >= 1 && choice <= 4) {
@@ -77,7 +77,20 @@ ystem.out.print("asd");
                         Scanner.out.println("Nhập tên cần xóa");
                         System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
                         break;
-                    case 7:
+                        case 7:
+                            int n = scanner.nextInt();
+                            double[] numbers = new double[n];
+                            double sum = 0;
+                            for(int i = 0; i<n;i++){
+                                System.out.println("nhap cac gia tri"+ (i+1) + " :");
+                                  numbers[i] = scanner.nextDouble();
+                                    sum += numbers[i];
+                            }
+                            dobule trungbinh = (n > 0) ? sum / n : 0;
+                            System.out.println("tong :"+ sum);
+                            System.out.println("trung binh : "+trungbinh);
+                            scanner.close();
+                    case 10:
                         System.exit(0);
                         default:
                             System.out.println("chon sai chuc nang vui long chon lai");
