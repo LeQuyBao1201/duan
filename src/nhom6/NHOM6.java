@@ -30,6 +30,7 @@ public static void main(String[] args) {
         System.out.println("8. Nhập vào số nguyên và in ra các số lẻ");
         System.out.println("9 Nhập tên cần xóa ");
         System.out.println("10. nhap vao so nguyen va in ra cac so chia het cho 5");
+        System.out.println("11. Nhập vào số le và in ra các số lẻ");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
         int choice = scanner.nextInt();
