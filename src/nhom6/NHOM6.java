@@ -32,15 +32,12 @@ public static void main(String[] args) {
         System.out.println("10. nhap vao so nguyen va in ra cac so chia het cho 5");
         System.out.println("11. Nhập vào số le và in ra các số lẻ");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
-
         int choice = scanner.nextInt();
-
         if (choice >= 1 && choice <= 4) {
             System.out.print("Nhap so thu nhat: ");
             int a = scanner.nextInt();
             System.out.print("Nhap so thu hai: ");
             int b = scanner.nextInt();
-
             switch (choice) {
                 case 1:
                     System.out.println("Kết quả: " + cong(a, b));
@@ -54,22 +51,19 @@ public static void main(String[] args) {
                 case 4:
                     System.out.println("Kết quả: " + chia(a, b));
                     break;
-
-                    case 5:
+                case 5:
                         System.out.println("nhập một số nguyên" );
                         int n = scanner.nextInt();
                         System.out.println("Các số lẻ :");
                         for (int i = 1; i <= n; i += 2) System.out.print(i + " ");
                     System.out.println();
                     break;
-                    case 6:
+                case 6:
                         scanner.nextInt();
                         System.out.println("Nhập tên cần xóa");
                         System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
                         break;
-                    
-             
-                    case 7:
+                case 7:
                          System.out.println("Nhập một số nguyên để tính giai thừa:");
                          int num = scanner.nextInt();
                          long factorial = 1;
@@ -78,7 +72,7 @@ public static void main(String[] args) {
                          }
                          System.out.println("Giai thừa của " + num + " là: " + factorial);
                          break;
-                    case 8:
+                case 8:
                           System.out.println("Nhập một số nguyên để kiểm tra số nguyên tố:");
                           int primeCheck = scanner.nextInt();
                           boolean isPrime = true;
@@ -94,13 +88,14 @@ public static void main(String[] args) {
                           }
     
                     break;
-                    case 9:
+
+                case 9:
                     System.out.print("Nhập tên cần xóa: ");
                     String nameToDelete = scanner.next();
                     System.out.println("Tên cần xóa là: " + nameToDelete);
                     break;
                    
-                    case 10:
+                case 10:
                     int number = scanner.nextInt();
         
                     System.out.println("Các số chia hết cho 5 từ 1 đến " + number + " là:");
@@ -115,9 +110,8 @@ public static void main(String[] args) {
                     System.exit(0);
                     default:
                     System.out.println("chon sai chuc nang vui long chon lai");
+
                     break;
-
-
             }
         } else if (choice == 5) {
             System.out.print("Nhập một số nguyên: ");
