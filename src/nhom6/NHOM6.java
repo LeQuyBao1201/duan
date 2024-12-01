@@ -98,13 +98,24 @@ public static void main(String[] args) {
                     String nameToDelete = scanner.next();
                     System.out.println("Tên cần xóa là: " + nameToDelete);
                     break;
+                   
+                    case 10:
+                    int number = scanner.nextInt();
+        
+                    System.out.println("Các số chia hết cho 5 từ 1 đến " + number + " là:");
+                    
+                    // Duyệt và in các số chia hết cho 5
+                    for (int i = 1; i <= number; i++) {
+                        if (i % 5 == 0) {
+                            System.out.print(i + " ");
+                        }
+                    }
                     case 21:
                     System.exit(0);
                     default:
                     System.out.println("chon sai chuc nang vui long chon lai");
                     break;
-                    case 10:
-                    
+
 
             }
         } else if (choice == 5) {
