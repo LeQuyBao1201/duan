@@ -19,22 +19,25 @@ public class NHOM6 {
 
 public static void main(String[] args) {
      Scanner scanner = new Scanner(System.in);
-        System.out.println("Chon chuc nang:");
+        System.out.println("Chọn chức năng:");
         System.out.println("1. Cộng");
         System.out.println("2. Trừ");
         System.out.println("3. Nhân");
         System.out.println("4. Chia");
         System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
-        System.out.println("6. Nhập vào số nguyên và in ra các số lẻ");
-        System.out.println("7 Nhập tên cần xóa ");
-        System.out.println("8. nhap vao so nguyen va in ra cac so chia het cho 5");
+        System.out.println("6. Nhập vào số chan và in ra các số chan");
+        System.out.println("7. Nhập vào số le và in ra các số lẻ");
+        System.out.println("8. Nhập vào số nguyên và in ra các số lẻ");
+        System.out.println("9 Nhập tên cần xóa ");
+        System.out.println("10. nhap vao so nguyen va in ra cac so chia het cho 5");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
+
         int choice = scanner.nextInt();
 
         if (choice >= 1 && choice <= 4) {
-            System.out.print("Nhap so thu nhat: ");
+            System.out.print("Nhập số thứ nhất: ");
             int a = scanner.nextInt();
-            System.out.print("Nhap so thu hai: ");
+            System.out.print("Nhập số thứ hai: ");
             int b = scanner.nextInt();
 
             switch (choice) {
@@ -90,7 +93,7 @@ public static void main(String[] args) {
                           }
     
                     break;
-                    case 9:
+                    case 21:
                     System.exit(0);
                     default:
                     System.out.println("chon sai chuc nang vui long chon lai");
