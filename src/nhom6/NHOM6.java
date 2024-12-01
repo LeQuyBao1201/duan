@@ -19,7 +19,7 @@ public class NHOM6 {
 
 public static void main(String[] args) {
      Scanner scanner = new Scanner(System.in);
-        System.out.println("Chọn chức năng:");
+        System.out.println("Chon chuc nang:");
         System.out.println("1. Cộng");
         System.out.println("2. Trừ");
         System.out.println("3. Nhân");
@@ -35,9 +35,9 @@ public static void main(String[] args) {
         int choice = scanner.nextInt();
 
         if (choice >= 1 && choice <= 4) {
-            System.out.print("Nhập số thứ nhất: ");
+            System.out.print("Nhap so thu nhat: ");
             int a = scanner.nextInt();
-            System.out.print("Nhập số thứ hai: ");
+            System.out.print("Nhap so thu hai: ");
             int b = scanner.nextInt();
 
             switch (choice) {
@@ -97,10 +97,6 @@ public static void main(String[] args) {
                     System.exit(0);
                     default:
                     System.out.println("chon sai chuc nang vui long chon lai");
-                    
-
-                       
-
 
             }
         } else if (choice == 5) {
@@ -120,6 +116,10 @@ public static void main(String[] args) {
 
     public static int cong(int a, int b) {
         return a + b;
+    }
+    public static int tru(int a, int b) {
+        return a - b;
+    }
 
     // phep nhan
     public static int nhan(int a, int b) {
@@ -143,5 +143,4 @@ public static void main(String[] args) {
         }
         System.out.println();
     }
-}
 }
