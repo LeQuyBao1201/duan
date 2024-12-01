@@ -25,10 +25,13 @@ public static void main(String[] args) {
         System.out.println("3. Nhân");
         System.out.println("4. Chia");
         System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
-        System.out.println("6. Nhập vào số nguyên và in ra các số lẻ");
-        System.out.println("7 Nhập tên cần xóa ");
-        System.out.println("8. nhap vao so nguyen va in ra cac so chia het cho 5");
+        System.out.println("6. Nhập vào số chan và in ra các số chan");
+        System.out.println("7. Nhập vào số le và in ra các số lẻ");
+        System.out.println("8. Nhập vào số nguyên và in ra các số lẻ");
+        System.out.println("9 Nhập tên cần xóa ");
+        System.out.println("10. nhap vao so nguyen va in ra cac so chia het cho 5");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
+
         int choice = scanner.nextInt();
 
         if (choice >= 1 && choice <= 4) {
@@ -64,27 +67,44 @@ public static void main(String[] args) {
                         System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
                         break;
                     
+             
                     case 7:
-
-                    System.out.print("Nhap vao mot so nguyen: ");
-                    int g = scanner.nextInt();
-                    
-                    System.out.println("Cac so chia het cho 5 tu 1 den " + g + " la:");
-                    
-                    // In ra các số chia hết cho 5
-                    for (int i = 1; i <= g; i++) {
-                        if (i % 5 == 0) {
-                            System.out.print(i + " ");
-                        }
-                    }
-                    break;
+                         System.out.println("Nhập một số nguyên để tính giai thừa:");
+                         int num = scanner.nextInt();
+                         long factorial = 1;
+                         for (int i = 1; i <= num; i++) {
+                             factorial *= i;
+                         }
+                         System.out.println("Giai thừa của " + num + " là: " + factorial);
+                         break;
                     case 8:
+                          System.out.println("Nhập một số nguyên để kiểm tra số nguyên tố:");
+                          int primeCheck = scanner.nextInt();
+                          boolean isPrime = true;
+                          if (primeCheck <= 1) {
+                              isPrime = false;
+                          } else {
+                              for (int i = 2; i <= Math.sqrt(primeCheck); i++) {
+                                  if (primeCheck % i == 0) {
+                                      isPrime = false;
+                                      break;
+                                  }
+                              }
+                          }
+    
+                    break;
+                    case 9:
+                    System.out.print("Nhập tên cần xóa: ");
+                    String nameToDelete = scanner.next();
+                    System.out.println("Tên cần xóa là: " + nameToDelete);
+                    break;
+                    case 21:
                     System.exit(0);
                     default:
                     System.out.println("chon sai chuc nang vui long chon lai");
+                    break;
+                    case 10:
                     
-
-                       
 
             }
         } else if (choice == 5) {
@@ -100,15 +120,15 @@ public static void main(String[] args) {
 
 
     }
-    //phwp cong
-    
-     public static int cong(int a, int b) {
+    // phwp cong
+
+    public static int cong(int a, int b) {
         return a + b;
-     }
-   // phep tru
+    }
     public static int tru(int a, int b) {
         return a - b;
     }
+
     // phep nhan
     public static int nhan(int a, int b) {
         return a * b;
@@ -121,7 +141,6 @@ public static void main(String[] args) {
         }
         return String.valueOf((double) a / b);
     }
-
 
     public static void inSoLe(int n) {
         System.out.print("Các số lẻ từ 0 đến " + n + " là: ");
