@@ -31,6 +31,7 @@ public static void main(String[] args) {
         System.out.println("9 Nhập tên cần xóa ");
         System.out.println("10. nhap vao so nguyen va in ra cac so chia het cho 5");
         System.out.println("11. Nhập vào số le và in ra các số lẻ");
+        System.out.println("12. Nhận thông tin khách hàng");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
         int choice = scanner.nextInt();
         if (choice >= 1 && choice <= 4) {
@@ -75,13 +76,13 @@ public static void main(String[] args) {
                 case 8:
                           System.out.println("Nhập một số nguyên để kiểm tra số nguyên tố:");
                           int primeCheck = scanner.nextInt();
-                          boolean isPrime = true;
+                          boolean iisPrime = true;
                           if (primeCheck <= 1) {
-                              isPrime = false;
+                              iisPrime = false;
                           } else {
                               for (int i = 2; i <= Math.sqrt(primeCheck); i++) {
                                   if (primeCheck % i == 0) {
-                                      isPrime = false;
+                                      iisPrime = false;
                                       break;
                                   }
                               }
