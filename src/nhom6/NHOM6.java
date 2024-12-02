@@ -4,52 +4,45 @@
  */
 package nhom6;
 
+import java.util.Scanner;
+
 /**
  *
  * @author adminhádnlaknl
  */
 public class NHOM6 {
+
     /**
      * @param args the command line arguments
      */
-<<<<<<< HEAD
-    public static void main(String[] args) {
-        // TODO code application logic here
-      
-        public static int nhan(int a, int b) {
-        return a * b;
-    }
 
-    // Hàm chia
-    public static String chia(int a, int b) {
-        if (b == 0) {
-            return "Không thể chia cho 0!";
-        }
-        return String.valueOf((double) a / b);   
-    }
-    
 
-    }
-=======
-import java.util.Scanner;
 public static void main(String[] args) {
      Scanner scanner = new Scanner(System.in);
-        System.out.println("Chọn chức năng:");
+        System.out.println("Chon chuc nang:");
         System.out.println("1. Cộng");
         System.out.println("2. Trừ");
         System.out.println("3. Nhân");
         System.out.println("4. Chia");
         System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
+<<<<<<< HEAD
         System.out.println("6.Xóa theo tên");
         System.out.println("7.Tính trung bình tổng")
         System.out.println("10.thoat");
         System.out.print("Nhập lựa chọn của bạn (1-10): ");
+=======
+        System.out.println("6. Nhập vào số nguyên và in ra các số lẻ");
+        System.out.println("7 Nhập tên cần xóa ");
+        System.out.println("8. nhap vao so nguyen va in ra cac so chia het cho 5");
+        
+        System.out.print("Nhập lựa chọn của bạn (1-20): ");
+>>>>>>> 0629a0d394a0ca5484ad0e30eada18026c21bbe5
         int choice = scanner.nextInt();
 
-        if (choice >= 1 && choice <= 4) {
-            System.out.print("Nhập số thứ nhất: ");
+       
+            System.out.print("Nhap so thu nhat: ");
             int a = scanner.nextInt();
-            System.out.print("Nhập số thứ hai: ");
+            System.out.print("Nhap so thu hai: ");
             int b = scanner.nextInt();
 
             switch (choice) {
@@ -65,6 +58,7 @@ public static void main(String[] args) {
                 case 4:
                     System.out.println("Kết quả: " + chia(a, b));
                     break;
+
                     case 5:
                         System.out.println("nhập một số nguyên" );
                         int n = scanner.nextInt();
@@ -77,6 +71,7 @@ public static void main(String[] args) {
                         Scanner.out.println("Nhập tên cần xóa");
                         System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
                         break;
+<<<<<<< HEAD
                         case 7:
                             int n = scanner.nextInt();
                             double[] numbers = new double[n];
@@ -91,9 +86,14 @@ public static void main(String[] args) {
                             System.out.println("trung binh : "+trungbinh);
                             scanner.close();
                     case 10:
+=======
+                    
+                    case 7:
+>>>>>>> 0629a0d394a0ca5484ad0e30eada18026c21bbe5
                         System.exit(0);
                         default:
                             System.out.println("chon sai chuc nang vui long chon lai");
+
             }
         } else if (choice == 5) {
             System.out.print("Nhập một số nguyên: ");
@@ -104,6 +104,7 @@ public static void main(String[] args) {
         }
 
         scanner.close();
+
 
 
     }
@@ -139,4 +140,6 @@ public static void main(String[] args) {
         }
         System.out.println();
     }
+
+    System.out.print(" thanh ");
 }
