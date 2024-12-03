@@ -26,8 +26,8 @@ public class NHOM6 {
         System.out.println("3. Nhân");
         System.out.println("4. Chia");
         System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
-        System.out.println("6. Nhập vào số chan và in ra các số chan");
-        System.out.println("7. Nhập vào số le và in ra các số lẻ");
+        System.out.println("6. Nhập vào số thực và in ra các số thuc");
+        System.out.println("7. Nhập vào số hữu tỉ  và in ra các số huu ti");
         System.out.print("Nhập lựa chọn của bạn (1-7): ");
         int choice = scanner.nextInt();
 
