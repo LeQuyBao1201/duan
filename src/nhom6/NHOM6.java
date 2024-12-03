@@ -34,7 +34,7 @@ public static void main(String[] args) {
         System.out.println("6. Nhập vào số nguyên và in ra các số lẻ");
         System.out.println("7 Nhập tên cần xóa ");
         System.out.println("8. nhap vao so nguyen va in ra cac so chia het cho 5");
-        
+        System.out.println("9. Tính tổng các số từ 1 đến n ")
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 >>>>>>> 0629a0d394a0ca5484ad0e30eada18026c21bbe5
         int choice = scanner.nextInt();
