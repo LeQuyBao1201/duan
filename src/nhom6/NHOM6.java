@@ -31,6 +31,8 @@ public static void main(String[] args) {
         System.out.println("9 Nhập tên cần xóa ");
         System.out.println("10. nhap vao so nguyen va in ra cac so chia het cho 5");
         System.out.println("11. Nhập vào số le và in ra các số lẻ");
+        System.out.println("12. Nhập tuổi và cân nặng");
+        System.out.println("13. Nhập chiều dài chiều rộng tính chu vi");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
         int choice = scanner.nextInt();
@@ -108,6 +110,23 @@ public static void main(String[] args) {
                             System.out.print(i + " ");
                         }
                     }
+                    case 11:
+                    System.out.println("Nhập vào một số lẻ:");
+
+                    int number = scanner.nextInt();
+            
+                    // Kiểm tra xem số nhập vào có phải là số lẻ không
+                    if (number % 2 == 0) {
+                        System.out.println("Số vừa nhập không phải là số lẻ. Vui lòng thử lại.");
+                    } else {
+                        System.out.println("Các số lẻ từ 1 đến " + number + " là:");
+                        for (int i = 1; i <= number; i += 2) {
+                            System.out.print(i + " ");
+                        }
+                    }
+            
+                    scanner.close();
+                    break;
                     case 21:
                     System.exit(0);
                     default:
