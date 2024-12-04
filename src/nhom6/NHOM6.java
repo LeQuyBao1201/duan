@@ -110,6 +110,23 @@ public static void main(String[] args) {
                             System.out.print(i + " ");
                         }
                     }
+                    case 11:
+                    System.out.println("Nhập vào một số lẻ:");
+
+                    int number = scanner.nextInt();
+            
+                    // Kiểm tra xem số nhập vào có phải là số lẻ không
+                    if (number % 2 == 0) {
+                        System.out.println("Số vừa nhập không phải là số lẻ. Vui lòng thử lại.");
+                    } else {
+                        System.out.println("Các số lẻ từ 1 đến " + number + " là:");
+                        for (int i = 1; i <= number; i += 2) {
+                            System.out.print(i + " ");
+                        }
+                    }
+            
+                    scanner.close();
+                    break;
                     case 21:
                     System.exit(0);
                     default:
