@@ -24,7 +24,7 @@ public static void main(String[] args) {
         System.out.println("2. Trừ");
         System.out.println("3. Nhân");
         System.out.println("4. Chia");
-        System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
+        System.out.println("5. Nhập vào số nguyên và in ra các số lẻ"); 
         System.out.println("6. Nhập vào số chan và in ra các số chan");
         System.out.println("7. Nhập vào số le và in ra các số lẻ");
         System.out.println("8. Nhập vào số nguyên và in ra các số lẻ");
@@ -32,6 +32,7 @@ public static void main(String[] args) {
         System.out.println("10. nhap vao so nguyen va in ra cac so chia het cho 5");
         System.out.println("11. Nhập vào số le và in ra các số lẻ");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
+
         int choice = scanner.nextInt();
         if (choice >= 1 && choice <= 4) {
             System.out.print("Nhap so thu nhat: ");
@@ -63,6 +64,7 @@ public static void main(String[] args) {
                         System.out.println("Nhập tên cần xóa");
                         System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
                         break;
+
                 case 7:
                          System.out.println("Nhập một số nguyên để tính giai thừa:");
                          int num = scanner.nextInt();
@@ -109,7 +111,7 @@ public static void main(String[] args) {
                     case 21:
                     System.exit(0);
                     default:
-                    System.out.println("chon sai chuc nang vui long chon lai");
+
 
                     break;
             }
@@ -157,4 +159,6 @@ public static void main(String[] args) {
         }
         System.out.println();
     }
+
+    System.out.print(" thanh ");
 }
