@@ -24,15 +24,17 @@ public static void main(String[] args) {
         System.out.println("2. Trừ");
         System.out.println("3. Nhân");
         System.out.println("4. Chia");
-        System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
+        System.out.println("5. Nhập vào số nguyên và in ra các số lẻ"); 
         System.out.println("6. Nhập vào số chan và in ra các số chan");
         System.out.println("7. Nhập vào số le và in ra các số lẻ");
         System.out.println("8. Nhập vào số nguyên và in ra các số lẻ");
         System.out.println("9 Nhập tên cần xóa ");
         System.out.println("10. nhap vao so nguyen va in ra cac so chia het cho 5");
         System.out.println("11. Nhập vào số le và in ra các số lẻ");
-        System.out.println("12. Nhận thông tin khách hàng");
+        System.out.println("12. Nhập tuổi và cân nặng");
+        System.out.println("13. Nhập chiều dài chiều rộng tính chu vi");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
+
         int choice = scanner.nextInt();
         if (choice >= 1 && choice <= 4) {
             System.out.print("Nhap so thu nhat: ");
@@ -64,6 +66,7 @@ public static void main(String[] args) {
                         System.out.println("Nhập tên cần xóa");
                         System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
                         break;
+
                 case 7:
                          System.out.println("Nhập một số nguyên để tính giai thừa:");
                          int num = scanner.nextInt();
@@ -76,13 +79,13 @@ public static void main(String[] args) {
                 case 8:
                           System.out.println("Nhập một số nguyên để kiểm tra số nguyên tố:");
                           int primeCheck = scanner.nextInt();
-                          boolean iisPrime = true;
+                          boolean isPrime = true;
                           if (primeCheck <= 1) {
-                              iisPrime = false;
+                              isPrime = false;
                           } else {
                               for (int i = 2; i <= Math.sqrt(primeCheck); i++) {
                                   if (primeCheck % i == 0) {
-                                      iisPrime = false;
+                                      isPrime = false;
                                       break;
                                   }
                               }
@@ -110,7 +113,7 @@ public static void main(String[] args) {
                     case 21:
                     System.exit(0);
                     default:
-                    System.out.println("chon sai chuc nang vui long chon lai");
+
 
                     break;
             }
@@ -158,4 +161,6 @@ public static void main(String[] args) {
         }
         System.out.println();
     }
+
+    System.out.print(" thanh ");
 }
