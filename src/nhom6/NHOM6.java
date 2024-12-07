@@ -34,7 +34,7 @@ public static void main(String[] args) {
         System.out.println("12. Nhập tuổi và cân nặng");
         System.out.println("13. Nhập chiều dài chiều rộng tính chu vi");
         System.out.println("14. Nhập chiều dài chiều rộng tính dien tich");
-        System.out.println("14. Nhập chiều dài chiều rộng chieu cao tính the tich");
+        System.out.println("15. Nhập chiều dài chiều rộng chieu cao tính the tich");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
         int choice = scanner.nextInt();
@@ -128,6 +128,41 @@ public static void main(String[] args) {
                     }
             
                     scanner.close();
+                    break;
+                    case 12:
+                    System.out.println("Nhập tuổi:");
+                    int age = scanner.nextInt();
+                    System.out.println("Nhập cân nặng (kg):");
+                    double weight = scanner.nextDouble();
+                    System.out.println("Tuổi: " + age + ", Cân nặng: " + weight + " kg");
+                    break;
+                    case 13:
+                    System.out.println("Nhập chiều dài:");
+                    double length = scanner.nextDouble();
+                    System.out.println("Nhập chiều rộng:");
+                    double width = scanner.nextDouble();
+                    double perimeter = 2 * (length + width);
+                    System.out.println("Chu vi của hình chữ nhật là: " + perimeter);
+                    break;
+            
+                    System.out.println("Lựa chọn không hợp lệ!");
+                    case 14:
+                    System.out.println("Nhập chiều dài:");
+                    double length = scanner.nextDouble();
+                    System.out.println("Nhập chiều rộng:");
+                    double width = scanner.nextDouble();
+                    double area = length * width;
+                    System.out.println("Diện tích là: " + area);
+                    break;
+                    case 15:
+                    System.out.println("Nhập chiều dài:");
+                    length = scanner.nextDouble();
+                    System.out.println("Nhập chiều rộng:");
+                    width = scanner.nextDouble();
+                    System.out.println("Nhập chiều cao:");
+                    double height = scanner.nextDouble();
+                    double volume = length * width * height;
+                    System.out.println("Thể tích là: " + volume);
                     break;
                     case 21:
                     System.exit(0);
