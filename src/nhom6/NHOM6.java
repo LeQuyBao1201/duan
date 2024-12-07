@@ -33,6 +33,7 @@ public static void main(String[] args) {
         System.out.println("11. Nhập vào số le và in ra các số lẻ");
         System.out.println("12. Nhập tuổi và cân nặng");
         System.out.println("13. Nhập chiều dài chiều rộng tính chu vi");
+        System.out.println("14. Nhập chiều dài chiều rộng tính dien tich");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
         int choice = scanner.nextInt();
