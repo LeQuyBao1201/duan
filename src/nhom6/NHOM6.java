@@ -202,6 +202,13 @@ public static void main(String[] args) {
                     double perimeter = 2 * (lengthPerimeter + widthPerimeter);
                     System.out.println("Chu vi ngôi nhà là: " + perimeter);
                     break;
+                    case 20:
+                    scanner.nextLine(); // Clear buffer
+                    System.out.print("Nhập địa chỉ nhà (VD: '123 Đường ABC, Phường XYZ'): ");
+                    String address = scanner.nextLine();
+                    String houseNumber = address.split(" ")[0]; // Lấy phần đầu tiên trước dấu cách
+                    System.out.println("Số nhà là: " + houseNumber);
+                    break;
                     case 21:
                     System.out.print("Nhập chiều cao của bạn (cm): ");
                     int height = scanner.nextInt();
