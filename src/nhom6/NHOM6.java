@@ -225,6 +225,14 @@ public static void main(String[] args) {
                     int number = scanner.nextInt();
                     System.out.println("Số gấp đôi là: " + (number * 2));
                     break;
+                    case 23:
+                    System.out.print("Nhập số thứ nhất: ");
+                    int num1 = scanner.nextInt();
+                    System.out.print("Nhập số thứ hai: ");
+                    int num2 = scanner.nextInt();
+                    int max = (num1 > num2) ? num1 : num2;
+                    System.out.println("Số lớn hơn là: " + max);
+                    break;
 
                     case 25:
                     System.exit(0);
