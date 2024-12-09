@@ -42,6 +42,7 @@ public static void main(String[] args) {
         System.out.println("20. nhập địa chỉ nhà in ra số nhà");
         System.out.println("21. nhập chiều cao ra size quần");
         System.out.println("22. Nhập số bất kỳ để in số đó gấp đôi");
+        System.out.println("23. Nhập 2 số in ra số lớn hơn");
         System.out.println("20.thoat");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
