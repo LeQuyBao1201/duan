@@ -220,6 +220,11 @@ public static void main(String[] args) {
                         System.out.println("Size quần: L");
                     }
                     break;
+                    case 22:
+                    System.out.print("Nhập số bất kỳ: ");
+                    int number = scanner.nextInt();
+                    System.out.println("Số gấp đôi là: " + (number * 2));
+                    break;
 
                     case 25:
                     System.exit(0);
