@@ -39,10 +39,9 @@ public static void main(String[] args) {
         System.out.println("17. Có 3 lọ mất nhãn hãy phân biệt độ Ph");
         System.out.println("18. nhập địa chỉ nhà in ra diện tích");
         System.out.println("19. nhập địa chỉ nhà in ra chu vi");
-        System.out.println("20. Nhập vào số huu ti và in ra các số huu ti");
-        System.out.println("21. Nhập vào số vô tỉ và in ra các số vô tỉ");
-        System.out.println("22. Nhập vào số thực và in ra các số thực");
-        System.out.println("23.thoat");
+        System.out.println("26. Nhập vào số huu ti và in ra các số huu ti");
+       
+        System.out.println("31.thoat");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
         int choice = scanner.nextInt();
