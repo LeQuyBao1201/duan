@@ -169,6 +169,35 @@ public static void main(String[] args) {
                     double volume = length * width * height;
                     System.out.println("Thể tích là: " + volume);
                     break;
+
+                    case 16:
+                    System.out.print("Nhập đường kính: ");
+                    double diameter = scanner.nextDouble();
+                    double circumference = Math.PI * diameter;
+                    System.out.println("Chu vi hình tròn là: " + circumference);
+                    break;
+                    case 17:
+                    System.out.println("Bạn cần kiểm tra độ pH của từng lọ và gắn nhãn đúng.");
+                    System.out.println("1. Sử dụng giấy quỳ để kiểm tra.");
+                    System.out.println("2. Dựa vào màu sắc quỳ để phân biệt: Acid, Trung tính, hoặc Base.");
+                    break;
+                    case 18:
+                    System.out.print("Nhập chiều dài: ");
+                    double length = scanner.nextDouble();
+                    System.out.print("Nhập chiều rộng: ");
+                    double width = scanner.nextDouble();
+                    double area = length * width;
+                    System.out.println("Diện tích ngôi nhà là: " + area);
+                    break;
+                    case 19:
+                    System.out.print("Nhập chiều dài: ");
+                    double lengthPerimeter = scanner.nextDouble();
+                    System.out.print("Nhập chiều rộng: ");
+                    double widthPerimeter = scanner.nextDouble();
+                    double perimeter = 2 * (lengthPerimeter + widthPerimeter);
+                    System.out.println("Chu vi ngôi nhà là: " + perimeter);
+                    break;
+
                     case 21:
                     System.exit(0);
                     default:
