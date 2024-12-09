@@ -233,6 +233,12 @@ public static void main(String[] args) {
                     int max = (num1 > num2) ? num1 : num2;
                     System.out.println("Số lớn hơn là: " + max);
                     break;
+                    case 24:
+                    scanner.nextLine(); // Clear buffer
+                    System.out.print("Nhập câu nói yêu thích của bạn: ");
+                    String quote = scanner.nextLine();
+                    System.out.println("Câu nói yêu thích của bạn: \"" + quote + "\"");
+                    break;
 
                     case 25:
                     System.exit(0);
