@@ -175,6 +175,11 @@ public static void main(String[] args) {
                     double circumference = Math.PI * diameter;
                     System.out.println("Chu vi hình tròn là: " + circumference);
                     break;
+                    case 17:
+                    System.out.println("Bạn cần kiểm tra độ pH của từng lọ và gắn nhãn đúng.");
+                    System.out.println("1. Sử dụng giấy quỳ để kiểm tra.");
+                    System.out.println("2. Dựa vào màu sắc quỳ để phân biệt: Acid, Trung tính, hoặc Base.");
+                    break;
                     case 21:
                     System.exit(0);
                     default:
