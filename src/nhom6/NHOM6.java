@@ -37,6 +37,10 @@ public static void main(String[] args) {
         System.out.println("15. Nhập chiều dài chiều rộng chieu cao tính the tich");
         System.out.println("16. Nhập chiều dài chiều rộng chieu cao tính đường cao");
         System.out.println("17. Nhập địa chỉ in ra diện tích nhà");
+        System.out.println("18. Nhập số nguyên in ra các số là căn bậc của 5");
+        System.out.println("19. Nhập tên in ra địa chỉ nhà");
+
+
 
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
