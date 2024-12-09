@@ -32,7 +32,7 @@ public class NHOM6 {
         int choice = scanner.nextInt();
 
         if (choice >= 1 && choice <= 4) {
-            System.out.print("Nhập số thứ nhất: ");
+            System.out.print("Nhập số thứ nhất: "); 
             int a = scanner.nextInt();
             System.out.print("Nhập số thứ hai: ");
             int b = scanner.nextInt();
@@ -59,7 +59,7 @@ public class NHOM6 {
             System.out.println("Lựa chọn không hợp lệ!");
         }
 
-        scanner.close();
+        scanner.close();đswd
 
     }
     //phwp cong
