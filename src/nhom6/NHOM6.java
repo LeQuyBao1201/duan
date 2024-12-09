@@ -180,6 +180,14 @@ public static void main(String[] args) {
                     System.out.println("1. Sử dụng giấy quỳ để kiểm tra.");
                     System.out.println("2. Dựa vào màu sắc quỳ để phân biệt: Acid, Trung tính, hoặc Base.");
                     break;
+                    case 18:
+                    System.out.print("Nhập chiều dài: ");
+                    double length = scanner.nextDouble();
+                    System.out.print("Nhập chiều rộng: ");
+                    double width = scanner.nextDouble();
+                    double area = length * width;
+                    System.out.println("Diện tích ngôi nhà là: " + area);
+                    break;
                     case 21:
                     System.exit(0);
                     default:
