@@ -35,6 +35,8 @@ public static void main(String[] args) {
         System.out.println("13. Nhập chiều dài chiều rộng tính chu vi");
         System.out.println("14. Nhập chiều dài chiều rộng tính dien tich");
         System.out.println("15. Nhập chiều dài chiều rộng chieu cao tính the tich");
+        System.out.println("16. Nhập chiều dài chiều rộng chieu cao tính the tich");
+       
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
         int choice = scanner.nextInt();
