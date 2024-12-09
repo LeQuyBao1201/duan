@@ -40,6 +40,7 @@ public static void main(String[] args) {
         System.out.println("18. nhập địa chỉ nhà in ra diện tích");
         System.out.println("19. nhập địa chỉ nhà in ra chu vi");
         System.out.println("20. nhập địa chỉ nhà in ra số nhà");
+        System.out.println("21. nhập chiều cao ra size quần");
         System.out.println("20.thoat");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
