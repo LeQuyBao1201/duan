@@ -169,6 +169,12 @@ public static void main(String[] args) {
                     double volume = length * width * height;
                     System.out.println("Thể tích là: " + volume);
                     break;
+                    case 16:
+                    System.out.print("Nhập đường kính: ");
+                    double diameter = scanner.nextDouble();
+                    double circumference = Math.PI * diameter;
+                    System.out.println("Chu vi hình tròn là: " + circumference);
+                    break;
                     case 21:
                     System.exit(0);
                     default:
