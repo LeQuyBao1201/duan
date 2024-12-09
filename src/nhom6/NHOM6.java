@@ -202,8 +202,19 @@ public static void main(String[] args) {
                     double perimeter = 2 * (lengthPerimeter + widthPerimeter);
                     System.out.println("Chu vi ngôi nhà là: " + perimeter);
                     break;
-
                     case 21:
+                    System.out.print("Nhập chiều cao của bạn (cm): ");
+                    int height = scanner.nextInt();
+                    if (height < 150) {
+                        System.out.println("Size quần: S");
+                    } else if (height <= 170) {
+                        System.out.println("Size quần: M");
+                    } else {
+                        System.out.println("Size quần: L");
+                    }
+                    break;
+
+                    case 25:
                     System.exit(0);
                     default:
 
