@@ -6,19 +6,18 @@ package nhom6;
 
 import java.util.Scanner;
 
-
 /**
  *
  * @author adminhádnlaknl
  */
 public class NHOM6 {
+
     /**
      * @param args the command line arguments
      */
 
 
-
-    public static void main(String[] args) {
+public static void main(String[] args) {
      Scanner scanner = new Scanner(System.in);
         System.out.println("Chọn chức năng:");
         System.out.println("1. Cộng");
@@ -50,6 +49,55 @@ public class NHOM6 {
                 case 4:
                     System.out.println("Kết quả: " + chia(a, b));
                     break;
+
+                    case 5:
+                        System.out.println("nhập một số nguyên" );
+                        int n = scanner.nextInt();
+                        System.out.println("Các số lẻ :");
+                        for (int i = 1; i <= n; i += 2) System.out.print(i + " ");
+                    System.out.println();
+                    break;
+                    case 6:
+                        scanner.nextInt();
+                        System.out.println("Nhập tên cần xóa");
+                        System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
+                        break;
+                    
+             
+                    case 7:
+                         System.out.println("Nhập một số nguyên để tính giai thừa:");
+                         int num = scanner.nextInt();
+                         long factorial = 1;
+                         for (int i = 1; i <= num; i++) {
+                             factorial *= i;
+                         }
+                         System.out.println("Giai thừa của " + num + " là: " + factorial);
+                         break;
+                    case 8:
+                          System.out.println("Nhập một số nguyên để kiểm tra số nguyên tố:");
+                          int primeCheck = scanner.nextInt();
+                          boolean isPrime = true;
+                          if (primeCheck <= 1) {
+                              isPrime = false;
+                          } else {
+                              for (int i = 2; i <= Math.sqrt(primeCheck); i++) {
+                                  if (primeCheck % i == 0) {
+                                      isPrime = false;
+                                      break;
+                                  }
+                              }
+                          }
+    
+                    break;
+                    case 21:
+                    System.exit(0);
+                    default:
+                    System.out.println("chon sai chuc nang vui long chon lai");
+                    
+
+                       
+
+
             }
         } else if (choice == 5) {
             System.out.print("Nhập một số nguyên: ");
@@ -62,15 +110,11 @@ public class NHOM6 {
         scanner.close();đswd
 
     }
-    //phwp cong
-    
-     public static int cong(int a, int b) {
+    // phwp cong
+
+    public static int cong(int a, int b) {
         return a + b;
-     }
-   // phep tru
-    public static int tru(int a, int b) {
-        return a - b;
-    }
+
     // phep nhan
     public static int nhan(int a, int b) {
         return a * b;
@@ -84,7 +128,6 @@ public class NHOM6 {
         return String.valueOf((double) a / b);
     }
 
-
     public static void inSoLe(int n) {
         System.out.print("Các số lẻ từ 0 đến " + n + " là: ");
         for (int i = 0; i <= n; i++) {
@@ -94,4 +137,5 @@ public class NHOM6 {
         }
         System.out.println();
     }
+}
 }
