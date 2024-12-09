@@ -43,7 +43,7 @@ public static void main(String[] args) {
         System.out.println("27. Nhập vào số vô tỉ và in ra các số vô tỉ");
         System.out.println("28. Nhập vào số thực và in ra các số thực");
         System.out.println("29. Nhập vào số đo 3 vong và in ra size đồ");
-        
+        System.out.println("30. Nhập vào chiều dài chiều rộng bàn chân và in ra size giày");
         System.out.println("31.thoat");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
