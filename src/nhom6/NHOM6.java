@@ -50,6 +50,7 @@ public static void main(String[] args) {
         System.out.println("29. Nhập vào số đo 3 vong và in ra size đồ");
         System.out.println("30. Nhập vào chiều dài chiều rộng bàn chân và in ra size giày");
         System.out.println("31.thoat");
+
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
         int choice = scanner.nextInt();
@@ -84,6 +85,21 @@ public static void main(String[] args) {
                         System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
                         break;
 
+                        case 7:
+                            int n = scanner.nextInt();
+                            double[] numbers = new double[n];
+                            double sum = 0;
+                            for(int i = 0; i<n;i++){
+                                System.out.println("nhap cac gia tri"+ (i+1) + " :");
+                                  numbers[i] = scanner.nextDouble();
+                                    sum += numbers[i];
+                            }
+                            dobule trungbinh = (n > 0) ? sum / n : 0;
+                            System.out.println("tong :"+ sum);
+                            System.out.println("trung binh : "+trungbinh);
+                            scanner.close();
+                 
+                    
                 case 7:
                          System.out.println("Nhập một số nguyên để tính giai thừa:");
                          int num = scanner.nextInt();
