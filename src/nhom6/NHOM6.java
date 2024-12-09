@@ -169,6 +169,7 @@ public static void main(String[] args) {
                     double volume = length * width * height;
                     System.out.println("Thể tích là: " + volume);
                     break;
+
                     case 16:
                     System.out.print("Nhập đường kính: ");
                     double diameter = scanner.nextDouble();
@@ -196,6 +197,7 @@ public static void main(String[] args) {
                     double perimeter = 2 * (lengthPerimeter + widthPerimeter);
                     System.out.println("Chu vi ngôi nhà là: " + perimeter);
                     break;
+
                     case 21:
                     System.exit(0);
                     default:
