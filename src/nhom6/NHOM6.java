@@ -24,20 +24,6 @@ public static void main(String[] args) {
         System.out.println("2. Trừ");
         System.out.println("3. Nhân");
         System.out.println("4. Chia");
-<<<<<<< HEAD
-        System.out.println("5. Nhập vào số nguyên và in ra các số lẻ");
-<<<<<<< HEAD
-        System.out.println("6.Xóa theo tên");
-        System.out.println("7.Tính trung bình tổng")
-        System.out.println("10.thoat");
-        System.out.print("Nhập lựa chọn của bạn (1-10): ");
-=======
-        System.out.println("8. Nhập vào số nguyên và in ra các số lẻ");
-        System.out.println("9 Nhập tên cần xóa ");
-        System.out.println("11. nhap vao so nguyen va in ra cac so chia het cho 5");
-        System.out.println("12. Tính tổng các số từ 1 đến n ");
-        System.out.println("13. Nhập vào số nguyên dương và in ra tổng các số chia hết cho 3");
-=======
         System.out.println("5. Nhập vào số nguyên và in ra các số lẻ"); 
         System.out.println("6. Nhập vào số chan và in ra các số chan");
         System.out.println("7. Nhập vào số le và in ra các số lẻ");
@@ -45,8 +31,26 @@ public static void main(String[] args) {
         System.out.println("9 Nhập tên cần xóa ");
         System.out.println("10. nhap vao so nguyen va in ra cac so chia het cho 5");
         System.out.println("11. Nhập vào số le và in ra các số lẻ");
-        System.out.println("12. Sắp xếp theo thứ tự từ bé tới lớn");
->>>>>>> d1a5398b2afefabfdd6dad03578ef0cea4734384
+        System.out.println("12. Nhập tuổi và cân nặng");
+        System.out.println("13. Nhập chiều dài chiều rộng tính chu vi");
+        System.out.println("14. Nhập chiều dài chiều rộng tính dien tich");
+        System.out.println("15. Nhập chiều dài chiều rộng chieu cao tính the tich");
+        System.out.println("16. Nhập đường kính tính chu vi");
+        System.out.println("17. Có 3 lọ mất nhãn hãy phân biệt độ Ph");
+        System.out.println("18. nhập địa chỉ nhà in ra diện tích");
+        System.out.println("19. nhập địa chỉ nhà in ra chu vi");
+        System.out.println("20. nhập địa chỉ nhà in ra số nhà");
+        System.out.println("21. nhập chiều cao ra size quần");
+        System.out.println("22. Nhập số bất kỳ để in số đó gấp đôi");
+        System.out.println("23. Nhập 2 số in ra số lớn hơn");
+        System.out.println("24. In ra câu nói yêu thích của bạn");
+        System.out.println("26. Nhập vào số huu ti và in ra các số huu ti");
+        System.out.println("27. Nhập vào số vô tỉ và in ra các số vô tỉ");
+        System.out.println("28. Nhập vào số thực và in ra các số thực");
+        System.out.println("29. Nhập vào số đo 3 vong và in ra size đồ");
+        System.out.println("30. Nhập vào chiều dài chiều rộng bàn chân và in ra size giày");
+        System.out.println("31.thoat");
+
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
         int choice = scanner.nextInt();
@@ -80,8 +84,7 @@ public static void main(String[] args) {
                         System.out.println("Nhập tên cần xóa");
                         System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
                         break;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
                         case 7:
                             int n = scanner.nextInt();
                             double[] numbers = new double[n];
@@ -95,18 +98,8 @@ public static void main(String[] args) {
                             System.out.println("tong :"+ sum);
                             System.out.println("trung binh : "+trungbinh);
                             scanner.close();
-                    case 10:
-                       System.exit(0);
-=======
+                 
                     
-                    case 7:
->>>>>>> 
-                        
-                        default:
-                            System.out.println("chon sai chuc nang vui long chon lai");
-=======
->>>>>>> d1a5398b2afefabfdd6dad03578ef0cea4734384
-
                 case 7:
                          System.out.println("Nhập một số nguyên để tính giai thừa:");
                          int num = scanner.nextInt();
@@ -150,7 +143,125 @@ public static void main(String[] args) {
                             System.out.print(i + " ");
                         }
                     }
+                    case 11:
+                    System.out.println("Nhập vào một số lẻ:");
+
+                    int number = scanner.nextInt();
+            
+                    // Kiểm tra xem số nhập vào có phải là số lẻ không
+                    if (number % 2 == 0) {
+                        System.out.println("Số vừa nhập không phải là số lẻ. Vui lòng thử lại.");
+                    } else {
+                        System.out.println("Các số lẻ từ 1 đến " + number + " là:");
+                        for (int i = 1; i <= number; i += 2) {
+                            System.out.print(i + " ");
+                        }
+                    }
+            
+                    scanner.close();
+                    break;
+                    case 12:
+                    System.out.println("Nhập tuổi:");
+                    int age = scanner.nextInt();
+                    System.out.println("Nhập cân nặng (kg):");
+                    double weight = scanner.nextDouble();
+                    System.out.println("Tuổi: " + age + ", Cân nặng: " + weight + " kg");
+                    break;
+                    case 13:
+                    System.out.println("Nhập chiều dài:");
+                    double length = scanner.nextDouble();
+                    System.out.println("Nhập chiều rộng:");
+                    double width = scanner.nextDouble();
+                    double perimeter = 2 * (length + width);
+                    System.out.println("Chu vi của hình chữ nhật là: " + perimeter);
+                    break;
+            
+                    System.out.println("Lựa chọn không hợp lệ!");
+                    case 14:
+                    System.out.println("Nhập chiều dài:");
+                    double length = scanner.nextDouble();
+                    System.out.println("Nhập chiều rộng:");
+                    double width = scanner.nextDouble();
+                    double area = length * width;
+                    System.out.println("Diện tích là: " + area);
+                    break;
+                    case 15:
+                    System.out.println("Nhập chiều dài:");
+                    length = scanner.nextDouble();
+                    System.out.println("Nhập chiều rộng:");
+                    width = scanner.nextDouble();
+                    System.out.println("Nhập chiều cao:");
+                    double height = scanner.nextDouble();
+                    double volume = length * width * height;
+                    System.out.println("Thể tích là: " + volume);
+                    break;
+
+                    case 16:
+                    System.out.print("Nhập đường kính: ");
+                    double diameter = scanner.nextDouble();
+                    double circumference = Math.PI * diameter;
+                    System.out.println("Chu vi hình tròn là: " + circumference);
+                    break;
+                    case 17:
+                    System.out.println("Bạn cần kiểm tra độ pH của từng lọ và gắn nhãn đúng.");
+                    System.out.println("1. Sử dụng giấy quỳ để kiểm tra.");
+                    System.out.println("2. Dựa vào màu sắc quỳ để phân biệt: Acid, Trung tính, hoặc Base.");
+                    break;
+                    case 18:
+                    System.out.print("Nhập chiều dài: ");
+                    double length = scanner.nextDouble();
+                    System.out.print("Nhập chiều rộng: ");
+                    double width = scanner.nextDouble();
+                    double area = length * width;
+                    System.out.println("Diện tích ngôi nhà là: " + area);
+                    break;
+                    case 19:
+                    System.out.print("Nhập chiều dài: ");
+                    double lengthPerimeter = scanner.nextDouble();
+                    System.out.print("Nhập chiều rộng: ");
+                    double widthPerimeter = scanner.nextDouble();
+                    double perimeter = 2 * (lengthPerimeter + widthPerimeter);
+                    System.out.println("Chu vi ngôi nhà là: " + perimeter);
+                    break;
+                    case 20:
+                    scanner.nextLine(); // Clear buffer
+                    System.out.print("Nhập địa chỉ nhà (VD: '123 Đường ABC, Phường XYZ'): ");
+                    String address = scanner.nextLine();
+                    String houseNumber = address.split(" ")[0]; // Lấy phần đầu tiên trước dấu cách
+                    System.out.println("Số nhà là: " + houseNumber);
+                    break;
                     case 21:
+                    System.out.print("Nhập chiều cao của bạn (cm): ");
+                    int height = scanner.nextInt();
+                    if (height < 150) {
+                        System.out.println("Size quần: S");
+                    } else if (height <= 170) {
+                        System.out.println("Size quần: M");
+                    } else {
+                        System.out.println("Size quần: L");
+                    }
+                    break;
+                    case 22:
+                    System.out.print("Nhập số bất kỳ: ");
+                    int number = scanner.nextInt();
+                    System.out.println("Số gấp đôi là: " + (number * 2));
+                    break;
+                    case 23:
+                    System.out.print("Nhập số thứ nhất: ");
+                    int num1 = scanner.nextInt();
+                    System.out.print("Nhập số thứ hai: ");
+                    int num2 = scanner.nextInt();
+                    int max = (num1 > num2) ? num1 : num2;
+                    System.out.println("Số lớn hơn là: " + max);
+                    break;
+                    case 24:
+                    scanner.nextLine(); // Clear buffer
+                    System.out.print("Nhập câu nói yêu thích của bạn: ");
+                    String quote = scanner.nextLine();
+                    System.out.println("Câu nói yêu thích của bạn: \"" + quote + "\"");
+                    break;
+
+                    case 25:
                     System.exit(0);
                     default:
 
