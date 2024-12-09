@@ -188,6 +188,14 @@ public static void main(String[] args) {
                     double area = length * width;
                     System.out.println("Diện tích ngôi nhà là: " + area);
                     break;
+                    case 19:
+                    System.out.print("Nhập chiều dài: ");
+                    double lengthPerimeter = scanner.nextDouble();
+                    System.out.print("Nhập chiều rộng: ");
+                    double widthPerimeter = scanner.nextDouble();
+                    double perimeter = 2 * (lengthPerimeter + widthPerimeter);
+                    System.out.println("Chu vi ngôi nhà là: " + perimeter);
+                    break;
                     case 21:
                     System.exit(0);
                     default:
