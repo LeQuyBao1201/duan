@@ -45,6 +45,7 @@ public static void main(String[] args) {
         System.out.println("9 Nhập tên cần xóa ");
         System.out.println("10. nhap vao so nguyen va in ra cac so chia het cho 5");
         System.out.println("11. Nhập vào số le và in ra các số lẻ");
+        System.out.println("12. Sắp xếp theo thứ tự từ bé tới lớn");
 >>>>>>> d1a5398b2afefabfdd6dad03578ef0cea4734384
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
