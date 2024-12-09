@@ -37,6 +37,8 @@ public static void main(String[] args) {
         System.out.println("15. Nhập chiều dài chiều rộng chieu cao tính the tich");
         System.out.println("16. Nhập đường kính tính chu vi");
         System.out.println("16. Có 3 lọ mất nhãn hãy phân biệt độ Ph");
+        System.out.println("16. nhập địa chỉ nhà in ra diện tích");
+
        
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
