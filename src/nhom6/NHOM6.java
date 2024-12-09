@@ -39,7 +39,12 @@ public static void main(String[] args) {
         System.out.println("17. Có 3 lọ mất nhãn hãy phân biệt độ Ph");
         System.out.println("18. nhập địa chỉ nhà in ra diện tích");
         System.out.println("19. nhập địa chỉ nhà in ra chu vi");
-        System.out.println("20.thoat");
+        System.out.println("20. nhập địa chỉ nhà in ra số nhà");
+        System.out.println("21. nhập chiều cao ra size quần");
+        System.out.println("22. Nhập số bất kỳ để in số đó gấp đôi");
+        System.out.println("23. Nhập 2 số in ra số lớn hơn");
+        System.out.println("24. In ra câu nói yêu thích của bạn");
+        System.out.println("25.thoat");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
         int choice = scanner.nextInt();
@@ -197,8 +202,45 @@ public static void main(String[] args) {
                     double perimeter = 2 * (lengthPerimeter + widthPerimeter);
                     System.out.println("Chu vi ngôi nhà là: " + perimeter);
                     break;
-
+                    case 20:
+                    scanner.nextLine(); // Clear buffer
+                    System.out.print("Nhập địa chỉ nhà (VD: '123 Đường ABC, Phường XYZ'): ");
+                    String address = scanner.nextLine();
+                    String houseNumber = address.split(" ")[0]; // Lấy phần đầu tiên trước dấu cách
+                    System.out.println("Số nhà là: " + houseNumber);
+                    break;
                     case 21:
+                    System.out.print("Nhập chiều cao của bạn (cm): ");
+                    int height = scanner.nextInt();
+                    if (height < 150) {
+                        System.out.println("Size quần: S");
+                    } else if (height <= 170) {
+                        System.out.println("Size quần: M");
+                    } else {
+                        System.out.println("Size quần: L");
+                    }
+                    break;
+                    case 22:
+                    System.out.print("Nhập số bất kỳ: ");
+                    int number = scanner.nextInt();
+                    System.out.println("Số gấp đôi là: " + (number * 2));
+                    break;
+                    case 23:
+                    System.out.print("Nhập số thứ nhất: ");
+                    int num1 = scanner.nextInt();
+                    System.out.print("Nhập số thứ hai: ");
+                    int num2 = scanner.nextInt();
+                    int max = (num1 > num2) ? num1 : num2;
+                    System.out.println("Số lớn hơn là: " + max);
+                    break;
+                    case 24:
+                    scanner.nextLine(); // Clear buffer
+                    System.out.print("Nhập câu nói yêu thích của bạn: ");
+                    String quote = scanner.nextLine();
+                    System.out.println("Câu nói yêu thích của bạn: \"" + quote + "\"");
+                    break;
+
+                    case 25:
                     System.exit(0);
                     default:
 
