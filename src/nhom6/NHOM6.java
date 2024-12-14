@@ -42,8 +42,9 @@ public static void main(String[] args) {
         System.out.println("20. InBody");
         System.out.println("21. InHealthy");
         System.out.println("22. InTraining");
-        System.out.println("20. Thoát");
-        System.out.print("Nhập lựa chọn của bạn (1-20): ");
+        System.out.println("23. InMindset");
+        System.out.println("24. Thoát");
+        System.out.print("Nhập lựa chọn của bạn (1-24): ");
 
         int choice = scanner.nextInt();
         if (choice >= 1 && choice <= 4) {
