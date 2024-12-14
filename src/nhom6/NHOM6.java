@@ -46,7 +46,6 @@ public static void main(String[] args) {
         System.out.println("23. InMindset");
         System.out.println("24. Thoát");
         System.out.print("Nhập lựa chọn của bạn (1-24): ");
-
         int choice = scanner.nextInt();
         if (choice >= 1 && choice <= 4) {
             System.out.print("Nhap so thu nhat: ");
@@ -79,6 +78,21 @@ public static void main(String[] args) {
                         System.out.println("Tên \""+ scanner.nextInt() + "\" đã được xóa (giả lập).");
                         break;
 
+                        case 7:
+                            int n = scanner.nextInt();
+                            double[] numbers = new double[n];
+                            double sum = 0;
+                            for(int i = 0; i<n;i++){
+                                System.out.println("nhap cac gia tri"+ (i+1) + " :");
+                                  numbers[i] = scanner.nextDouble();
+                                    sum += numbers[i];
+                            }
+                            dobule trungbinh = (n > 0) ? sum / n : 0;
+                            System.out.println("tong :"+ sum);
+                            System.out.println("trung binh : "+trungbinh);
+                            scanner.close();
+                 
+                    
                 case 7:
                          System.out.println("Nhập một số nguyên để tính giai thừa:");
                          int num = scanner.nextInt();
@@ -200,9 +214,7 @@ public static void main(String[] args) {
                     double widthPerimeter = scanner.nextDouble();
                     double perimeter = 2 * (lengthPerimeter + widthPerimeter);
                     System.out.println("Chu vi ngôi nhà là: " + perimeter);
-                    break;
-                
-      
+                    break;               
                     case 20:
                     inBody(scanner);
                     break;
@@ -216,11 +228,8 @@ public static void main(String[] args) {
                     inMindset();
                     break;
                     case 24:
-                    System.exit(0);
+                      System.exit(0);
                     default:
-
-
-                    break;
             }
         } else if (choice == 5) {
             System.out.print("Nhập một số nguyên: ");
@@ -357,5 +366,5 @@ public static void main(String[] args) {
         System.out.println();
     }
 }
-}
+
 
