@@ -35,11 +35,13 @@ public static void main(String[] args) {
         System.out.println("13. Nhập chiều dài chiều rộng tính chu vi");
         System.out.println("14. Nhập chiều dài chiều rộng tính dien tich");
         System.out.println("15. Nhập chiều dài chiều rộng chieu cao tính the tich");
-        System.out.println("16. Nhập đường kính tính chu vi");
-        System.out.println("17. Có 3 lọ mất nhãn hãy phân biệt độ Ph");
-        System.out.println("18. nhập địa chỉ nhà in ra diện tích");
-        System.out.println("19. nhập địa chỉ nhà in ra chu vi");
-        System.out.println("20.thoat");
+        System.out.println("16. Nhập chiều dài chiều rộng chieu cao tính đường cao");
+        System.out.println("17. Nhập địa chỉ in ra diện tích nhà");
+        System.out.println("18. Nhập số nguyên in ra các số là căn bậc của 5");
+        System.out.println("19. Nhập tên in ra địa chỉ nhà");
+        System.out.println("20. InBody");
+        System.out.println("19. In");
+        System.out.println("20. Thoát");
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
         int choice = scanner.nextInt();
