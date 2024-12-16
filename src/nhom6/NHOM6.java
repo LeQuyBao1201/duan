@@ -4,7 +4,6 @@
  */
 package nhom6;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -36,16 +35,26 @@ public static void main(String[] args) {
         System.out.println("13. Nhập chiều dài chiều rộng tính chu vi");
         System.out.println("14. Nhập chiều dài chiều rộng tính dien tich");
         System.out.println("15. Nhập chiều dài chiều rộng chieu cao tính the tich");
-        System.out.println("16. Nhập chiều dài chiều rộng chieu cao tính đường cao");
-        System.out.println("17. Nhập địa chỉ in ra diện tích nhà");
-        System.out.println("18. Nhập số nguyên in ra các số là căn bậc của 5");
-        System.out.println("19. Nhập tên in ra địa chỉ nhà");
-        System.out.println("20. InBody");
-        System.out.println("21. InHealthy");
-        System.out.println("22. InTraining");
-        System.out.println("23. InMindset");
-        System.out.println("24. Thoát");
-        System.out.print("Nhập lựa chọn của bạn (1-24): ");
+        System.out.println("16. Nhập đường kính tính chu vi");
+        System.out.println("17. Có 3 lọ mất nhãn hãy phân biệt độ Ph");
+        System.out.println("18. nhập địa chỉ nhà in ra diện tích");
+        System.out.println("19. nhập địa chỉ nhà in ra chu vi");
+        System.out.println("20. nhập địa chỉ nhà in ra số nhà");
+        System.out.println("21. nhập chiều cao ra size quần");
+        System.out.println("22. Nhập số bất kỳ để in số đó gấp đôi");
+        System.out.println("23. Nhập 2 số in ra số lớn hơn");
+        System.out.println("24. In ra câu nói yêu thích của bạn");
+        System.out.println("26. Nhập vào số huu ti và in ra các số huu ti");
+        System.out.println("27. Nhập vào số vô tỉ và in ra các số vô tỉ");
+        System.out.println("28. Nhập vào số thực và in ra các số thực");
+        System.out.println("29. Nhập vào số đo 3 vong và in ra size đồ");
+        System.out.println("30. Nhập vào chiều dài chiều rộng bàn chân và in ra size giày");
+        System.out.println("30. Nhập vào chiều dài chiều rộng bàn chân và in ra size giày");
+        System.out.println("30. Nhập vào chiều dài chiều rộng bàn chân và in ra size giày");
+        System.out.println("31.thoat");
+
+        System.out.print("Nhập lựa chọn của bạn (1-20): ");
+
         int choice = scanner.nextInt();
         if (choice >= 1 && choice <= 4) {
             System.out.print("Nhap so thu nhat: ");
@@ -188,6 +197,7 @@ public static void main(String[] args) {
                     double volume = length * width * height;
                     System.out.println("Thể tích là: " + volume);
                     break;
+
                     case 16:
                     System.out.print("Nhập đường kính: ");
                     double diameter = scanner.nextDouble();
@@ -207,29 +217,58 @@ public static void main(String[] args) {
                     double area = length * width;
                     System.out.println("Diện tích ngôi nhà là: " + area);
                     break;
-                    case 19:
+                    case 19:a
                     System.out.print("Nhập chiều dài: ");
                     double lengthPerimeter = scanner.nextDouble();
                     System.out.print("Nhập chiều rộng: ");
                     double widthPerimeter = scanner.nextDouble();
                     double perimeter = 2 * (lengthPerimeter + widthPerimeter);
                     System.out.println("Chu vi ngôi nhà là: " + perimeter);
-                    break;               
+                    break;
                     case 20:
-                    inBody(scanner);
+                    scanner.nextLine(); // Clear buffer
+                    System.out.print("Nhập địa chỉ nhà (VD: '123 Đường ABC, Phường XYZ'): ");
+                    String address = scanner.nextLine();
+                    String houseNumber = address.split(" ")[0]; // Lấy phần đầu tiên trước dấu cách
+                    System.out.println("Số nhà là: " + houseNumber);
                     break;
-                case 21:
-                    inHealthy(scanner);
+                    case 21:
+                    System.out.print("Nhập chiều cao của bạn (cm): ");
+                    int height = scanner.nextInt();
+                    if (height < 150) {
+                        System.out.println("Size quần: S");
+                    } else if (height <= 170) {
+                        System.out.println("Size quần: M");
+                    } else {
+                        System.out.println("Size quần: L");
+                    }
                     break;
-                case 22:
-                    inTraining(scanner);
+                    case 22:
+                    System.out.print("Nhập số bất kỳ: ");
+                    int number = scanner.nextInt();
+                    System.out.println("Số gấp đôi là: " + (number * 2));
                     break;
-                case 23:
-                    inMindset();
+                    case 23:
+                    System.out.print("Nhập số thứ nhất: ");
+                    int num1 = scanner.nextInt();
+                    System.out.print("Nhập số thứ hai: ");
+                    int num2 = scanner.nextInt();
+                    int max = (num1 > num2) ? num1 : num2;
+                    System.out.println("Số lớn hơn là: " + max);
                     break;
                     case 24:
-                      System.exit(0);
+                    scanner.nextLine(); // Clear buffer
+                    System.out.print("Nhập câu nói yêu thích của bạn: ");
+                    String quote = scanner.nextLine();
+                    System.out.println("Câu nói yêu thích của bạn: \"" + quote + "\"");
+                    break;
+
+                    case 25:
+                    System.exit(0);
                     default:
+
+
+                    break;
             }
         } else if (choice == 5) {
             System.out.print("Nhập một số nguyên: ");
@@ -276,95 +315,5 @@ public static void main(String[] args) {
         System.out.println();
     }
 
-      public static void inBody(Scanner scanner) {
-        System.out.println("\n--- IN BODY: Tính chỉ số BMI ---");
-        System.out.print("Nhập cân nặng (kg): ");
-        float weight = scanner.nextFloat();
-
-        System.out.print("Nhập chiều cao (m): ");
-        float height = scanner.nextFloat();
-
-        float bmi = weight / (height * height);
-        System.out.printf("Chỉ số BMI của bạn là: %.2f\n", bmi);
-
-        if (bmi < 18.5) {
-            System.out.println("Phân loại: Thiếu cân");
-        } else if (bmi >= 18.5 && bmi < 24.9) {
-            System.out.println("Phân loại: Bình thường");
-        } else if (bmi >= 25 && bmi < 29.9) {
-            System.out.println("Phân loại: Thừa cân");
-        } else {
-            System.out.println("Phân loại: Béo phì");
-        }
-        System.out.println();
-    }
-
-    // Chức năng 2: IN HEALTHY - Gợi ý khẩu phần ăn
-    public static void inHealthy(Scanner scanner) {
-        System.out.println("\n--- IN HEALTHY: Gợi ý khẩu phần ăn ---");
-        System.out.print("Nhập chỉ số BMI của bạn: ");
-        float bmi = scanner.nextFloat();
-
-        System.out.println("Khẩu phần ăn được gợi ý:");
-        if (bmi < 18.5) {
-            System.out.println("- Tăng cường ăn nhiều protein, tinh bột và chất béo lành mạnh.");
-            System.out.println("- Gợi ý: 3 bữa chính + 2 bữa phụ giàu calo.");
-        } else if (bmi >= 18.5 && bmi < 24.9) {
-            System.out.println("- Chế độ ăn cân bằng với đầy đủ dinh dưỡng.");
-            System.out.println("- Gợi ý: Ăn nhiều rau xanh, protein và chất xơ.");
-        } else {
-            System.out.println("- Hạn chế tinh bột, đường và chất béo xấu.");
-            System.out.println("- Gợi ý: Tăng cường ăn rau xanh, uống nhiều nước.");
-        }
-        System.out.println();
-    }
-
-    // Chức năng 3: IN TRAINING - Gợi ý bài tập
-    public static void inTraining(Scanner scanner) {
-        System.out.println("\n--- IN TRAINING: Gợi ý bài tập ---");
-        System.out.println("Chọn mục tiêu của bạn:");
-        System.out.println("1. Giảm cân");
-        System.out.println("2. Tăng cơ");
-        System.out.println("3. Cải thiện sức bền");
-        System.out.print("Nhập lựa chọn: ");
-        int goal = scanner.nextInt();
-
-        switch (goal) {
-            case 1:
-                System.out.println("Bài tập gợi ý: Cardio (chạy bộ, nhảy dây) và HIIT.");
-                break;
-            case 2:
-                System.out.println("Bài tập gợi ý: Tập tạ, hít đất, squats và deadlifts.");
-                break;
-            case 3:
-                System.out.println("Bài tập gợi ý: Chạy bền, bơi lội và đạp xe.");
-                break;
-            default:
-                System.out.println("Lựa chọn không hợp lệ.");
-        }
-        System.out.println();
-    }
-
-    // Chức năng 4: IN MINDSET - Hiển thị sách và podcast
-    public static void inMindset() {
-        System.out.println("\n--- IN MINDSET: Sách và Podcast phát triển tư duy ---");
-        ArrayList<String> books = new ArrayList<>();
-        books.add("1. Đắc Nhân Tâm - Dale Carnegie");
-        books.add("2. Nhà Giả Kim - Paulo Coelho");
-        books.add("3. Tư Duy Nhanh và Chậm - Daniel Kahneman");
-        books.add("4. 7 Thói Quen Hiệu Quả - Stephen Covey");
-
-        System.out.println("Danh sách sách gợi ý:");
-        for (String book : books) {
-            System.out.println(book);
-        }
-
-        System.out.println("\nPodcast gợi ý:");
-        System.out.println("- The Happiness Lab");
-        System.out.println("- Ted Talks Daily");
-        System.out.println("- Unlocking Us - Brené Brown");
-        System.out.println();
-    }
+    System.out.print(" thanh ");
 }
-
-
