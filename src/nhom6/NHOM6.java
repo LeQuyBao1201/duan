@@ -52,6 +52,10 @@ public static void main(String[] args) {
         System.out.println("30. Nhập vào chiều dài chiều rộng bàn chân và in ra size giày");
         System.out.println("30. Nhập vào chiều dài chiều rộng bàn chân và in ra size giày");
         System.out.println("31.thoat");
+        System.out.println("a");
+        System.out.println("asasdasdadsa");
+        System.out.println("aasssaasas");
+        System.out.println("aasssaasas");
 
         System.out.print("Nhập lựa chọn của bạn (1-20): ");
 
